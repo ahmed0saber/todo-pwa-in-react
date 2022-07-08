@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-family: 'Bitter', 'Cairo', sans-serif;
+  border: none;
+}
+body{
+  background-color: #f7f7f7;
+}
+main{
+  width: calc(100% - 20px);
+  max-width: 600px;
+  margin: 10px auto;
+}
+.add-task{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 10px 0;
+  box-shadow: 0px 0px 2px 2px #21212142;
+  padding: 10px;
+}
+.add-task input{
+  flex: 4;
+  padding: 8px 4px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+}
+.add-task button{
+  flex: 1;
+  padding: 8px 4px;
+  background-color: #3F84E5;
+  color: #f7f7f7;
+  font-size: 16px;
+  cursor: pointer;
+}
+.task{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 2px #21212142;
+}
+.task div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 30px);
+}
+.task div button{
+  width: 30px;
+  height: 30px;
+  background-color: #0000;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+.task div span{
+  margin: 0 10px;
+  width: calc(100% - 50px);
+}
+.task > button{
+  width: 30px;
+  height: 30px;
+  background-color: #0000;
+  font-size: 24px;
+  color: #B20D30;
+  font-weight: bold;
+  border: 2px solid #B20D30;
+  cursor: pointer;
+}
+.task.completed div button{
+  background-color: #42c483;
+}
+.task.completed div span{
+  text-decoration: line-through;
+}
+.tasks-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
